@@ -23,6 +23,33 @@ The project utilizes descriptive statistics, hypothesis testing, and advanced in
    - Compare results with non-adjusted tests for robustness.
 
 ---
+## Code Functionality
+
+This R code analyzes Airbnb property listings in Seattle to investigate the relationship between **host response time** and **log-transformed nightly prices**. The code performs the following steps:
+
+1. **Data Preprocessing**:
+   - Cleans and filters the dataset to remove missing or irrelevant values.
+   - Encodes categorical variables for host response time.
+
+2. **Descriptive Statistics**:
+   - Summarizes the data distribution for log-transformed prices across response time categories.
+   - Visualizes data using histograms and bar charts.
+
+3. **Assumption Testing**:
+   - Tests normality using the Shapiro-Wilk test.
+   - Tests homogeneity of variances using Levene’s test.
+
+4. **ANOVA Analysis**:
+   - Conducts one-way ANOVA to identify significant differences in log-transformed prices across host response time categories.
+
+5. **Post-Hoc Pairwise Comparisons**:
+   - Performs Tukey’s Honest Significant Difference (HSD) test and Bonferroni-corrected t-tests to compare response categories pairwise.
+
+6. **Visualization**:
+   - Creates QQ plots and bar charts to support statistical findings.
+
+This code allows users to explore how host responsiveness influences pricing and provides both statistical and visual insights.
+
 
 ## Dataset Description
 - **Source**: [Airbnb Listings Dataset](https://www.kaggle.com/datasets/airbnb/seattle).
