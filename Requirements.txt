@@ -1,0 +1,19 @@
+# Requirements
+
+## Software
+1. **R**: Version 4.0 or later. Download from [CRAN](https://cran.r-project.org/).
+2. **RStudio**: An optional but recommended IDE for R. Download from [RStudio](https://www.rstudio.com/).
+
+## R Packages
+| Package   | Description                                        | Installation Command                     |
+|-----------|----------------------------------------------------|------------------------------------------|
+| `dplyr`   | A grammar of data manipulation.                   | `install.packages("dplyr")`             |
+| `ggplot2` | Elegant graphics for data visualization.           | `install.packages("ggplot2")`           |
+| `reshape` | Flexible restructuring and aggregation of data.    | `install.packages("reshape")`           |
+| `car`     | Companion to applied regression.                  | `install.packages("car")`               |
+| `multcomp`| Simultaneous inference for general linear models.  | `install.packages("multcomp")`          |
+
+### Install All Packages at Once
+To install all required packages, run the following command in R:
+```r
+install.packages(c("dplyr", "ggplot2", "reshape", "car", "multcomp"))
